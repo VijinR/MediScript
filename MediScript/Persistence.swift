@@ -19,6 +19,7 @@ struct PersistenceController {
             newItem.timestamp = Date()
         }
         do {
+            
             try viewContext.save()
         } catch {
             // Replace this implementation with code to handle the error appropriately.
