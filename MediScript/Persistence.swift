@@ -2,7 +2,7 @@
 //  Persistence.swift
 //  MediScript
 //
-//  Created by Athul Babu on 2025-06-14.
+//  Created by Vijin Raj on 22/06/25.
 //
 
 import CoreData
@@ -10,8 +10,7 @@ import CoreData
 struct PersistenceController {
     static let shared = PersistenceController()
 
-    @MainActor
-    static let preview: PersistenceController = {
+    static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
@@ -19,7 +18,6 @@ struct PersistenceController {
             newItem.timestamp = Date()
         }
         do {
-            
             try viewContext.save()
         } catch {
             // Replace this implementation with code to handle the error appropriately.

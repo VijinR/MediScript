@@ -2,7 +2,7 @@
 //  MediScriptApp.swift
 //  MediScript
 //
-//  Created by Athul Babu on 2025-06-14.
+//  Created by Vijin Raj on 22/06/25.
 //
 
 import SwiftUI
@@ -10,11 +10,16 @@ import SwiftUI
 @main
 struct MediScriptApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject var router = AppRouter()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ScreenWrapperView {
+                SplashView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            }
+            .environmentObject(router)
         }
     }
 }
+
