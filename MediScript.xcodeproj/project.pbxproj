@@ -26,6 +26,7 @@
 		8E182B0B2E0744C3006766A9 /* ValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E182B0A2E0744C3006766A9 /* ValidationHelper.swift */; };
 		8E182B0E2E074760006766A9 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E182B0D2E074760006766A9 /* PrimaryButtonStyle.swift */; };
 		8E182B102E0749D7006766A9 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E182B0F2E0749D7006766A9 /* AppConstants.swift */; };
+		8E20328D2E199D4800318257 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E20328C2E199D4800318257 /* UserResponse.swift */; };
 		8E5CDFCB2E1822AA009014B9 /* ScreenWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CDFCA2E1822AA009014B9 /* ScreenWrapperView.swift */; };
 		8E5CDFCE2E182C5B009014B9 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CDFCD2E182C5B009014B9 /* UIApplication.swift */; };
 		8E5CDFD02E182EDD009014B9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CDFCF2E182EDD009014B9 /* RegisterViewController.swift */; };
@@ -72,6 +73,7 @@
 		8E182B0A2E0744C3006766A9 /* ValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationHelper.swift; sourceTree = "<group>"; };
 		8E182B0D2E074760006766A9 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		8E182B0F2E0749D7006766A9 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8E20328C2E199D4800318257 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		8E5CDFCA2E1822AA009014B9 /* ScreenWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenWrapperView.swift; sourceTree = "<group>"; };
 		8E5CDFCD2E182C5B009014B9 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		8E5CDFCF2E182EDD009014B9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				8E5CDFE32E1855E6009014B9 /* GeneralResponse.swift */,
 				8E5CDFEB2E18620E009014B9 /* LoginResponse.swift */,
+				8E20328C2E199D4800318257 /* UserResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				8E5CDFF82E19387D009014B9 /* HomeView.swift in Sources */,
 				8E182B0B2E0744C3006766A9 /* ValidationHelper.swift in Sources */,
 				8E5CDFE12E185511009014B9 /* AppEndPoints.swift in Sources */,
+				8E20328D2E199D4800318257 /* UserResponse.swift in Sources */,
 				8E5CDFE62E185979009014B9 /* LoaderView.swift in Sources */,
 				8E182B0E2E074760006766A9 /* PrimaryButtonStyle.swift in Sources */,
 				8E182B102E0749D7006766A9 /* AppConstants.swift in Sources */,

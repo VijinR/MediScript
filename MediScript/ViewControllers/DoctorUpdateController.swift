@@ -50,18 +50,18 @@ class DoctorUpdateController: ObservableObject {
             "contactNumber": "+91" + phoneNumber
         ]
 
-        APIService.putRequest(
+        APIService.postRequest(
             url: url,
             body: body,
-            responseType: GeneralResponse.self
+            responseType: UserResponse.self
         ) { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 self.isLoading = false
                 switch result {
                 case .success(let response):
-                    print("✅ Doctor details updated: \(response.message)")
-                    ToastView.show(message: response.message, type: .success)
+                    print("✅ Doctor details updated: \(response)")
+                    ToastView.show(message: "Details updated successfully", type: .success)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                         self.onUpdateSuccess?()
                     }
